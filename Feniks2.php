@@ -253,12 +253,12 @@ $Alphabet->setRowsColumns(3, 4);
 $symbolsForDigit = ['1', '2', '3', '4', '5'];
 $digitLineValues = ['1' => 25, '2' => 10, '3' => 25, '4' => 15, '5' => 15];
 $Digit = new SlotMachine('DigitMaster 12345', $betKoeficenti, $symbolsForDigit, $digitLineValues,$definedWinsforBoard3x4);
-$Alphabet->setRowsColumns(3, 4);
+$Digit->setRowsColumns(3, 4);
 
 $symbolsForRandom = ['@', '!', '*', '%', '$'];
 $randomLineValues = ['@' => 55, '!' => 100, '*' => 20, '%' => 10, '$' => 10];
 $Random = new SlotMachine('Random character finder $%!@&', $betKoeficenti, $symbolsForRandom, $randomLineValues,$definedWinsforBoard3x4);
-$Alphabet->setRowsColumns(3, 4);
+$Random->setRowsColumns(3, 4);
 
 $slotMachines = [$Alphabet, $Digit, $Random];
 
